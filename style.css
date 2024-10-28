@@ -9,6 +9,8 @@
 	--color-gray: rgb(205, 205, 205);
 }
 
+/*CSS PARA DESKTOP*/
+
 body {
 	font-family: 'Open sans', sans-serif;
 	color: #000;
@@ -22,7 +24,7 @@ nav {
 	align-items: center;
 	padding: 10px 50px 20px 0;
 	position: fixed;
-	width: 100vw;
+	width: 100%;
 }
 
 .logo {
@@ -74,7 +76,7 @@ header {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	color: #fff;
 }
 
@@ -85,7 +87,7 @@ header {
 	align-items: end;
 	width: 390px;
 	height: 100vh;
-	margin-right: 18vw;
+	margin-right: 18%;
 	text-align: right;
 }
 
@@ -98,13 +100,12 @@ header {
 	font-size: 60px;
 	font-weight: 800;
 	font-family: "Oswald", sans-serif;
-
 }
 
 .banner > button {
 	margin-top: 20px;
 	font-size: 18px;
-	font-weight: 1000;
+	font-weight: 900;
 	padding: 20px;
 	color: #fff;
 	background-color: var(--color-aqua);
@@ -123,7 +124,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 18vw;
+	margin-right: 18%;
 	margin-bottom: 40px;
 	font-size: 20px;
 }
@@ -132,10 +133,14 @@ header {
 	height: 50px;
 }
 
+main {
+	width: 100%;
+}
+
 .introduction {
 	display: flex;
 	align-items: center;
-	width: 100vw;
+	width: 100%;
 	height: 580px;
 	background-image: url(assets/bienvenido_fondo.jpg);
 	background-repeat: no-repeat;
@@ -173,7 +178,7 @@ header {
 
 .blog {
 	padding: 30px 0 30px 0;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -229,7 +234,7 @@ header {
 }
 
 footer {
-	width: 100vw;
+	width: 100%;
 	height: auto;
 	background-color: var(--color-gray);
 	display: flex;
@@ -255,4 +260,213 @@ footer {
 	margin: 20px 0 5px 0;
 	font-family: "Oswald", sans-serif;
 	font-weight: 500;
+}
+
+.copyright {
+	text-align: center;
+}
+
+/*RESPONSIVE PARA MOVIL*/
+
+@media (max-width: 500px) {
+	nav {
+		position: static;
+		background-color: #000;
+		opacity: 1;
+		height: 100vh;
+		flex-direction: column;
+		padding: 30px 0 30px 0;
+	}
+
+	.logo {
+		flex-direction: column;
+		flex-grow: 0.5;
+	}
+
+	.logo > a > img {
+		height: 120px;
+	}
+
+	.options {
+		flex-grow: 5;
+	}
+
+	.options > ul{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 100%;
+	}
+
+	nav a {
+		font-size: 20px;
+	}
+
+	header {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.banner {
+		align-items: center;
+		margin: 0;
+		height: auto;
+		width: 90%;
+		padding: 40px;
+		background-color: rgb(0, 0, 0, 0.5);
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.phrase_one_banner{
+		font-size: 18px;
+	}
+
+	.phrase_two_banner, .phrase_three_banner{
+		font-size: 48px;
+	}
+
+	.banner > button {
+		font-size: 14px;
+	}
+
+	.banner > i {
+		font-size: 14px;
+	}
+
+	.link_instagram {
+		margin: 25% 0 0 0;
+		font-size: 14px;
+	}
+
+	.introduction {
+		height: 100vh;
+		background-position: center;
+		justify-content: center;
+		background-size: cover;
+	}
+
+	.text {
+		margin: 0;
+		width: 90%;
+		text-align: center;
+	}
+
+	.text > h1 {
+		font-size: 20px;
+	}
+
+	.text > h2 {
+		font-size: 16px;
+	}
+
+	.text > p {
+		font-size: 14px;
+	}
+
+	.images > div > a > img {
+		width: 280px;
+	}
+
+	.images > div > a > p{
+		font-size: 14px;
+	}
+
+	.images > div > a > h3 {
+		font-size: 12px;
+	}
+
+	.copyright {
+		font-size: 14px;
+	}
+}
+
+/*RESPONSIVE PARA TABLET*/
+
+@media (min-width: 501px) and (max-width: 1280px) {
+	nav {
+		position: static;
+		background-color: #000;
+		opacity: 1;
+		height: 100vh;
+		flex-direction: column;
+		padding: 30px 0 30px 0;
+	}
+
+	.logo {
+		flex-direction: column;
+		flex-grow: 0.5;
+	}
+
+	.logo > a > img {
+		height: 200px;
+	}
+
+	.options {
+		flex-grow: 5;
+	}
+
+	.options > ul{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		height: 100%;
+	}
+
+	nav a {
+		font-size: 30px;
+	}
+
+	header {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.banner {
+		align-items: center;
+		margin: 0;
+		height: auto;
+		width: 50%;
+		padding: 40px;
+		background-color: rgb(0, 0, 0, 0.5);
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.phrase_one_banner{
+		font-size: 30px;
+	}
+
+	.phrase_two_banner, .phrase_three_banner{
+		font-size: 60px;
+	}
+
+	.banner > button {
+		font-size: 18px;
+	}
+
+	.banner > i {
+		font-size: 20px;
+	}
+
+	.link_instagram {
+		margin: 25% 0 0 0;
+		font-size: 20px;
+	}
+
+	.link_instagram img {
+		height: 60px;
+	}
+
+	.introduction {
+		background-position: center;
+		justify-content: center;
+		background-size: cover;
+	}
+
+	.text {
+		margin: 0;
+		text-align: center;
+		max-width: 90%;
+	}
 }
