@@ -61,9 +61,12 @@ nav a {
 	font-weight: 600;
 }
 
+.options a {
+	transition: 400ms;
+}
+
 .options a:hover {
 	color: var(--color-aqua);
-	transition: 400ms;
 }
 
 header {
@@ -112,12 +115,12 @@ header {
 	border: 2px solid var(--color-aqua);
 	border-radius: 10px;
 	cursor: pointer;
+	transition: 400ms
 }
 
 .banner > button:hover {
 	background-color: #fff;
 	color: var(--color-aqua);
-	transition: 400ms
 }
 
 .link_instagram {
@@ -206,6 +209,7 @@ main {
 	padding: 20px;
 	cursor: pointer;
 	margin: 20px 0 0 0;
+	transition: 400ms;
 }
 
 .images > div > a > img {
@@ -230,7 +234,6 @@ main {
 
 .images > div:hover {
 	border-color: var(--color-aqua);
-	transition: 400ms;
 }
 
 footer {
